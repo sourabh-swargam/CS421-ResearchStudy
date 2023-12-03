@@ -52,6 +52,8 @@ unzip datasets.zip
 
 Use the following commands to run the models and observe outputs. In order change the model, dataset, or type of training to be performed, refer the above Args usages to view possible choices. Replacing the string at the appropriate places will make the code run for the specified parameters.
 
+If you are using the IPYNB to run the code on Colab, please note that the number of experiments that can be performed with the free version is severely limited (partly due to computation resources and partly due to the environment setup for the google compute backend.)
+
 - Standard Training:
 
 ```python
