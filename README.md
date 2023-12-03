@@ -44,7 +44,7 @@ unzip datasets.zip
 - `--max_steps`: Maximum steps for training
 - `--run`: Random seed to use
 - `--model_type`:
-  - `standard`: Standard finetuning (`--label_type gt`) or distillation (`--label_type llm`)
+  - `standard`: Standard Training (`--label_type gt`) or Standard Knowledge Training (`--label_type llm`)
   - `task_prefix`: Distilling step-by-step
 - `--parallelize`: Model parallelism (requires a GPU or TPU)
 
@@ -58,7 +58,7 @@ Use the following commands to run the models and observe outputs. In order chang
 python run.py --from_pretrained t5-base --dataset cqa --model_type standard --label_type gt --batch_size 16
 ```
 
-- Standard distillation:
+- Standard Knowledge Training:
 
 ```python
 python run.py --from_pretrained t5-base --dataset cqa --model_type standard --label_type llm --batch_size 16
